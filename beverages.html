@@ -1,0 +1,421 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/2.0.1/animate.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Limelight&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Miniver&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:ital,wght@0,300;1,300&display=swap" rel="stylesheet">
+<style type="text/css">
+   body,.resp-body #root {
+   font-size: 12px;
+   line-height: 26px;
+   color: #1B2E4F;
+   letter-spacing: 0.5px;
+   background: #0b1315;
+   font-family: 'Josefin Sans', sans-serif;
+   }
+   p {
+   font-size: 18px;
+   margin-bottom: 30px;
+   line-height: 28px;
+   color: #ffffff;
+   font-weight: 300;
+   margin: 20px;
+   }
+   #banner_content {
+   margin-top: 0!important;
+   margin-bottom: 30px;
+   }
+   h2, h3, h4, h5, 
+   .h2, .h3, .h4, .h5 {
+   color: #1B2E4F;
+   font-weight: 700;
+   text-transform: capitalize;
+   font-family: 'Josefin Sans', sans-serif;
+   }
+   h1, .h1 {
+   font-family: 'Limelight', cursive;
+   font-size: 90px;
+   line-height: 100px;
+   margin-bottom: 30px;
+   text-transform: uppercase;
+   letter-spacing: 15px;
+   color: #c9ab81;
+   }
+   h2,.h2 {
+   }
+   h3, .h3 {
+   font-size: 45px;
+   line-height: 55px;
+   color: #c9ab81;
+   text-transform: uppercase;
+   margin-bottom: 30px;
+   }
+   h4, .h4 {
+   font-size: 30px;
+   line-height: 35px;
+   margin-bottom: 15px;
+   }
+   h5,.h5 {
+   font-weight: 600;
+   text-transform: uppercase;
+   color: #c9ab81;
+   margin: 0;
+   font-size: 24px;
+   line-height: 34px;
+   }
+   h6,.h6 {
+   font-family: 'Miniver', cursive;
+   font-size: 22px;
+   line-height: 32px;
+   color: #c9ab81;
+   }
+   hr {
+   border-top: 0.5px solid #715b3e;
+   }
+   p > a {
+   color: inherit;
+   }
+   .row {
+   margin: 0 -15px!important;
+   }
+   .text-white h1,.text-white h2,.text-white h3,.text-white h4,.text-white h5,.text-white h6,.text-white p {
+   color: #fff;
+   }
+   .bg-dark {
+   background-color: #000!important;
+   }
+   section {
+   padding: 100px 0 70px;
+   position: relative;
+   z-index: 1;
+   background-size: cover;
+   background-position: center center;
+   background-repeat: no-repeat;
+   }
+   .page-wrapper {
+   background: #0b1315;
+   }
+   .page-wrapper .btn {
+   padding: 10px 30px;
+   text-transform: uppercase;
+   font-family: 'Open Sans Condensed', sans-serif;
+   }
+   .page-wrapper .btn-primary{
+   background: transparent;
+   border: 1px solid #c9ab81;
+   border-radius: 0;
+   color: #ffffff;
+   font-size: 14px;
+   letter-spacing: 5px;
+   margin-bottom: 30px;
+   }
+   .wow {
+   visibility: hidden;
+   }
+   .note-editable .wow {
+   visibility: visible;
+   }
+   .page-wrapper #banner_content.bannerHomepage {
+   margin-top: 0!important;
+   }
+   .head-slider .img-wrapper{
+   position: relative;
+   min-height: 700px;
+   background-size: cover;
+   background-position: center center;
+   background-repeat: no-repeat;
+   }
+   .header-box{
+   position: relative;
+   }
+   .head-content {
+   position: absolute;
+   top: 35%;
+   z-index: 1;
+   left: 0;
+   right: 0;
+   margin: 0 auto;
+   text-align: center;
+   }
+   .dark-overlay {
+   content: "";
+   background: rgba(0,0,0,0.5);
+   position: absolute;
+   width: 100%;
+   height: 100%;
+   top: 0;
+   left: 0;
+   z-index: 1;
+   }
+   .about-image-box{
+   position: relative;
+   margin-bottom: 70px;
+   }
+   .about-image-box .img-wrapper{
+   min-height: 400px;
+   max-width: 400px;
+   background-size: cover;
+   background-position: center center;
+   background-repeat: no-repeat;
+   right: 0;
+   margin: 0 auto;
+   }
+   .about-image-box-2{
+   position: absolute;
+   min-height: 400px;
+   min-width: 400px;
+   background-size: cover;
+   background-position: center center;
+   background-repeat: no-repeat;
+   bottom: -70px;
+   left: 0px;
+   margin: 0 auto;
+   }
+   .menu-section .img-wrapper{
+   min-height: 600px;
+   background-size: cover;
+   background-position: center center;
+   background-repeat: no-repeat;
+   margin-bottom: 30px;
+   }
+   .menu-box {
+   position: relative;
+   }
+   .menu-content {
+   position: absolute;
+   background: #0f1d22;
+   transform: translateZ(20px) scaleY(0);
+   transform-origin: top;
+   transition: 0.5s;
+   transform-style: preserve-3d;
+   text-align: center;
+   align-items: center;
+   height: auto;
+   left: 35px;
+   top: 35px;
+   display: flex;
+   right: 35px;
+   bottom: 35px;
+   justify-content: center;
+   }
+   .menu-content h3{
+   margin-bottom: 0;
+   }
+   .menu-box:hover .menu-content{
+   transform: translateZ(20px) scaleY(1);
+   }
+   .menu-box .menu-content a{
+   text-decoration: none;
+   }
+   .service-box img {
+   max-width: 70px;
+   max-height: 70px;
+   margin-bottom: 30px;
+   }
+   @media(min-width: 576px) {
+   }
+   @media(min-width: 768px) {
+   }
+   @media(max-width: 991px) {
+   .head-slider .img-wrapper {
+   position: relative;
+   min-height: 600px;
+   }
+   .menu-section .img-wrapper {
+   min-height: 400px;
+   }
+   .about-image-box .img-wrapper {
+   min-height: 300px;
+   max-width: 300px;
+   }
+   .about-image-box-2 {
+   position: absolute;
+   min-height: 300px;
+   min-width: 300px;
+   }
+   h3, .h3 {
+   font-size: 35px;
+   line-height: 45px;
+   margin-bottom: 30px;
+   }
+   }
+   @media(max-width: 767px) {
+   section {
+   padding: 50px 0 35px;
+   }
+   .head-slider .img-wrapper {
+   position: relative;
+   min-height: 500px;
+   }
+   h1, .h1 {
+   font-family: 'Limelight', cursive;
+   font-size: 55px;
+   line-height: 70px;
+   margin-bottom: 30px;
+   }
+   h3, .h3 {
+   font-size: 35px;
+   line-height: 45px;
+   margin-bottom: 30px;
+   }
+   .menu-section .img-wrapper {
+   min-height: 300px;
+   margin-bottom: 30px;
+   }
+   }
+   @media(max-width: 575px) {
+   }
+</style>
+<div class="page-wrapper">
+   <section>
+      <div class="container">
+         <div class="row header-box">
+            <div class="offset-md-3 col-md-6">
+               <div class="head-slider owl-carousel">
+                  <div class="img-wrapper" data-background="https://public.touch2success.com/static/22fb2377487e9d20958cd5cb3f5a19ad/img/1617297610phpeSppf5.jpg">
+                     <div class="dark-overlay">
+                     </div>
+                  </div>
+                  <div class="img-wrapper" data-background="https://public.touch2success.com/static/22fb2377487e9d20958cd5cb3f5a19ad/img/1617297610phpMM3Va1.jpg">
+                     <div class="dark-overlay">
+                     </div>
+                  </div>
+                  <div class="img-wrapper" data-background="https://public.touch2success.com/static/22fb2377487e9d20958cd5cb3f5a19ad/img/1617297610phpCXuUj9.jpg">
+                     <div class="dark-overlay">
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="head-content">
+               <h1>Hash's Drinks</h1>
+            </div>
+         </div>
+      </div>
+   </section>
+   <hr>
+   <section>
+      <div class="container">
+         <div class="row align-items-center text-center">
+            <div class="col-md-4">
+               <div class="service-box">
+                  <img class="img-fluid mx-auto" src="https://public.touch2success.com/static/22fb2377487e9d20958cd5cb3f5a19ad/img/1617286882phpcLswkR.png">
+                  <h5>Select Items</h5>
+                  <p>Choose the drinks that you like.</p>
+               </div>
+            </div>
+            <div class="col-md-4">
+               <div class="service-box">
+                  <img class="img-fluid mx-auto" src="https://public.touch2success.com/static/22fb2377487e9d20958cd5cb3f5a19ad/img/1617286882phpNVA2WG.png">
+                  <h5>Make Payment</h5>
+                  <p>Pay online through trusted gateways.</p>
+               </div>
+            </div>
+            <div class="col-md-4">
+               <div class="service-box">
+                  <img class="img-fluid mx-auto" src="https://public.touch2success.com/static/22fb2377487e9d20958cd5cb3f5a19ad/img/1617286882phpcS9yzw.png">
+                  <h5>Get Them Delivered</h5>
+                  <p>Your drinks will reach your door-step.</p>
+               </div>
+            </div>
+         </div>
+      </div>
+   </section>
+   <hr>
+   <section>
+      <div class="container">
+         <div class="row align-items-center text-center">
+            <div class="col-md-6">
+               <div class="about-content-box">
+                  <h6>About us</h6>
+                  <h3>Liquor Is Bottled Poetry</h3>
+                  <p>We offer fine varieties of liquor that will please every liquor lover. Our drinks are made by popular brands that are known for their excellent taste and quality.</p>
+                  <p>Our prices are the best in the market. Now, you can order online from our website, safely in the comfort of your home.</p>
+                  <a class="btn btn-primary" href="/ordernow">Order Now</a>
+               </div>
+            </div>
+            <div class="col-md-6">
+               <div class="about-image-box">
+                  <div class="img-wrapper" data-background="https://public.touch2success.com/static/22fb2377487e9d20958cd5cb3f5a19ad/img/1612552336phpSRw7wL.jpg"></div>
+                  <div class="about-image-box-2">
+                     <div class="img-wrapper" data-background="https://public.touch2success.com/static/22fb2377487e9d20958cd5cb3f5a19ad/img/1612543862phpnHVrdG.jpg"></div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </section>
+   <hr>
+   <section class="menu-section">
+      <div class="container">
+         <h6 class="text-center">Our menu</h6>
+         <h3 class="text-center">Made to perfection</h3>
+         <div class="row">
+            <div class="col-md-4">
+               <div class="menu-box wow fadeInDown" data-wow-delay="0.5s">
+                  <div class="img-wrapper" data-background="https://public.touch2success.com/static/22fb2377487e9d20958cd5cb3f5a19ad/img/1612536547phpOgpJov.jpg">
+                     <div class="menu-content">
+                        <a href="/ordernow">
+                           <h3>Rum</h3>
+                           <h5>Order Now</h5>
+                        </a>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="col-md-4">
+               <div class="menu-box wow fadeInDown" data-wow-delay="0.5s">
+                  <div class="img-wrapper" data-background="https://public.touch2success.com/static/22fb2377487e9d20958cd5cb3f5a19ad/img/1612552248phpQVeoOt.jpg">
+                     <div class="menu-content">
+                        <a href="/ordernow">
+                           <h3>Beer</h3>
+                           <h5>Order Now</h5>
+                        </a>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="col-md-4">
+               <div class="menu-box wow fadeInDown" data-wow-delay="0.5s">
+                  <div class="img-wrapper" data-background="https://public.touch2success.com/static/22fb2377487e9d20958cd5cb3f5a19ad/img/1612537663phpXWuuNE.jpg">
+                     <div class="menu-content">
+                        <a href="/ordernow">
+                           <h3>Vodka</h3>
+                           <h5>Order Now</h5>
+                        </a>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </section>
+</div>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js" async=""></script>
+<script>
+   var pageSection = $('[data-background]');
+   pageSection.each(function(indx){
+   	if ($(this).attr("data-background")){
+   		$(this).css("background-image", "url(" + $(this).data("background") + ")");
+   	}
+   });
+   $.getScript("https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js", function() {
+          $('.head-slider').owlCarousel({
+              loop:true,
+              margin:0,
+              nav:true,
+              autoplay:true,
+              items:1,
+              animateOut: 'fadeOut'
+          });
+      });
+</script>
+<script type="text/javascript">
+   $.getScript("https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js", function() {
+       wow = new WOW({
+   	    animateClass: 'animated',
+   	    offset: 100
+   	});
+   	wow.init();
+   });	
+</script>
